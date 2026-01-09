@@ -289,6 +289,7 @@ header ul a:hover{
     background-color: #080020b7;
     border-radius: 20px;
     transition: 0.5s;
+    
 }
 
 .card h1{
@@ -296,6 +297,7 @@ header ul a:hover{
     margin: 0;
     bottom: 40%;
     left: 5%;
+    padding-right: 3px;
     font-size: 25px;
     z-index: 1;
     color: lightgray;
@@ -310,6 +312,7 @@ header ul a:hover{
     color: gray;
     font-size: 13px;
     line-height: 20px;
+    padding-right: 2px;
 }
 
 .card img{
@@ -1168,6 +1171,8 @@ header ul a:hover{
 
     .card {
         min-height: 20rem;
+        width: 100%; /* Ensure full width on mobile */
+        margin-bottom: 20px;
     }
 
     .card h1{
@@ -1176,7 +1181,9 @@ header ul a:hover{
     }
 
     .project-card {
-        height: 50%;
+        height: auto; /* Allow height to adjust */
+        margin-left: 0; /* Center align */
+        width: 100%;
     }
 
     .project-info p{
@@ -1184,7 +1191,11 @@ header ul a:hover{
     }
 
     .project-info{
-        margin-left: -80px;
+        margin-left: 0; /* Reset negative margin */
+        padding: 0 20px;
+        width: 100%;
+        text-align: center;
+        align-items: center;
     }
 
     .skills-box{
@@ -1260,17 +1271,18 @@ header ul a:hover{
 
 
 .real-state {
-  width: 600px;
+  width: 100%;
+  max-width: 600px;
   position: relative;
   overflow: hidden;
   border-radius: 25px;
 }
 
-.real-sate img {
+.real-state img {
   width: 100%;
+  height: auto;
+  display: block;
   transition: transform 0.3s ease;
-  
-  
 }
 
 .real-state::after {
