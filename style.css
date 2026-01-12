@@ -1033,7 +1033,12 @@ header ul a:hover {
         position: absolute;
         top: 0;
         left: 0;
-        z-index: -1;
+        /* Removed negative z-index to ensure visibility */
+    }
+
+    .blackhole-box {
+        mix-blend-mode: normal;
+        z-index: 0;
     }
 
     .autoBlur {
@@ -1183,6 +1188,7 @@ header ul a:hover {
 
     .blackhole-box {
         overflow: hidden;
+        height: 100vh;
     }
 
     .blackhole-box video {
